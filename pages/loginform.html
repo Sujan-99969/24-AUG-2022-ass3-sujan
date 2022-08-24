@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../pages/styles//style.css" />
+    <title>Login Form</title>
+  </head>
+  <body  style="background-image:url('../pages/assets/locklogin.jpg'); background-size:cover" >
+    <div class="wrapper">
+      <div class="form">
+        <div class="title">Login form</div>
+        <form id="log_form" action="#" >
+          <div class="input_wrap">
+            <div class="input_field">
+              <input type="text" required placeholder="Enter Username" class="input" id="input_text" />
+              <p id="validmsg1"></p>
+            </div>
+          </div>
+          <div class="input_wrap">
+            <div class="input_field">
+              <input type="password" required class="input" placeholder="Enter password" id="input_password" />
+              <p id="validmsg2"></p>
+
+            </div>
+          </div>
+          <div class="input_wrap">
+            
+            <input
+              type="submit"
+              class=" btn disabled"
+              value="Login"
+            />
+            <span
+              >Not an existing user ?
+              <a href="../pages/register.html">sign up</a></span
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="../pages/scipts//login.js"></script>
+  </body>
+</html>

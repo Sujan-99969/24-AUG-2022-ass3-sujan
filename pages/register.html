@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../pages/styles/style.css" />
+    <title>Register Form</title>
+  </head>
+  <body
+    style="
+      background-image: url('../pages/assets/locklogin.jpg');
+      background-size: cover;
+    "
+  >
+    <div class="wrapper">
+      <div class="form">
+        <div class="title">Register to Login</div>
+        <form id="register_form" action="#">
+          <div class="input_wrap">
+            <div class="input_field">
+              <input
+                type="text"
+                required
+                placeholder="Enter username"
+                class="input"
+                id="user_name"
+              />
+            </div>
+          </div>
+
+          <div class="input_wrap">
+            <div class="input_field">
+              <input
+                type="email"
+                required
+                placeholder="Enter Email"
+                class="input"
+                id="user_email"
+              />
+            </div>
+          </div>
+          <div class="input_wrap">
+            <div class="input_field">
+              <input
+                type="text"
+                required
+                placeholder="Enter Mobilenumber"
+                maxlength="10"
+                class="input"
+                id="mobile_number"
+              />
+            </div>
+          </div>
+          <div class="input_wrap">
+            <div class="input_field">
+              <input
+                type="password"
+                required
+                placeholder="Enter password"
+                class="input"
+                id="user_pwd"
+              />
+            </div>
+          </div>
+          <div class="input_wrap">
+            <span class="error_msg"
+              >Incorrect username or password. Please try again</span
+            >
+            <input
+              type="submit"
+              id="login_btn"
+              class="btn disabled"
+              value="Register"
+            />
+            <span
+              >are are existing user ?
+              <a href="../pages/loginform.html">sign in</a></span
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="../pages/scipts//script.js"></script>
+  </body>
+</html>

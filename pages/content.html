@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body
+    style="
+      background-image: url('../pages/assets/landbackground.jpg');
+      background-size: cover;
+    "
+  >
+    <div class="nav-wraper">
+      <div class="navsec">
+        <a class="" href="../pages/content.html">Home</a>
+
+        <a class=""  href="../pages/about.html">About Us</a>
+        <a href="../pages/contactus.html">Contact Us</a>
+        <a href="../pages/gallery.html">Gallery</a>
+      </div>
+      <div class="title-wraper">
+        <div id="welcomemsg" class="title title-word-2">
+           
+        </div>
+      </div>
+      <div class="input_wrap">
+      
+
+        <a href="../pages/loginform.html"
+          ><input
+            type="button"
+            onclick="logout()"
+            class="btn disabled"
+            value="Logout"
+        /></a>
+      </div>
+    </div>
+  
+    <script src="../pages/scipts/script.js">
+      
+    </script>
+<script>
+  let getToken = JSON.parse(localStorage.getItem("token")) || [];
+console.log(getToken);
+
+function callToken() {
+  if (getToken.length === 0) {
+    // alert("calling");
+    // console.log(getToken);
+    window.location.href = "loginform.html";
+    // console.log("token not coming");
+  } else {
+    window.location.href;
+  }
+}
+callToken();
+// let getUserName = JSON.parse(localStorage.getItem("userdetails",userName)) || [];
+// console.log();
+// welcomeMsg.innerHTML = "Welcome " + getUserName[0].userName + "....!";
+// console.log(getUserName[0].userName);
+</script>
+  </body>
+</html>
